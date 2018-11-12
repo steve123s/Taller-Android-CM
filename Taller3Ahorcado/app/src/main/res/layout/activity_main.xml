@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <EditText
+        android:id="@+id/letra"
+        android:layout_width="121dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:maxLength="1"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/palabra" />
+
+    <TextView
+        android:id="@+id/intentos"
+        android:layout_width="298dp"
+        android:layout_height="38dp"
+        android:text="5"
+        android:textAlignment="viewStart"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categoria" />
+
+    <TextView
+        android:id="@+id/categoria"
+        android:layout_width="386dp"
+        android:layout_height="41dp"
+        android:text="Hello World!"
+        android:textAlignment="viewStart"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/guessButton"
+        android:layout_width="121dp"
+        android:layout_height="45dp"
+        android:text="Adivina!"
+        app:layout_constraintStart_toEndOf="@+id/letra"
+        app:layout_constraintTop_toBottomOf="@+id/palabra" />
+
+    <TextView
+        android:id="@+id/palabra"
+        android:layout_width="242dp"
+        android:layout_height="40dp"
+        android:text="Palabra"
+        android:textAlignment="viewStart"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="167dp"
+        android:layout_height="107dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/intentos"
+        tools:srcCompat="@tools:sample/avatars[14]" />
+
+    <Button
+        android:id="@+id/restartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="52dp"
+        android:text="Reiniciar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categoria" />
+
+</android.support.constraint.ConstraintLayout>
